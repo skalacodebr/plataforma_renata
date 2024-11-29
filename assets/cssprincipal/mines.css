@@ -1,0 +1,276 @@
+@media (min-width: 576px) {
+    .order-sm-0 {
+      order: 0;
+    }
+    
+    .order-sm-1 {
+      order: 1;
+    }
+    
+    .order-sm-2 {
+      order: 2;
+    }
+    
+    .order-sm-3 {
+      order: 3;
+    }
+    
+    .order-sm-4 {
+      order: 4;
+    }
+    
+    .order-sm-5 {
+      order: 5;
+    }
+    
+    .order-sm-first {
+      order: -1;
+    }
+    
+    .order-sm-last {
+      order: 6;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .order-md-0 {
+      order: 0;
+    }
+    
+    .order-md-1 {
+      order: 1;
+    }
+    
+    .order-md-2 {
+      order: 2;
+    }
+    
+    .order-md-3 {
+      order: 3;
+    }
+    
+    .order-md-4 {
+      order: 4;
+    }
+    
+    .order-md-5 {
+      order: 5;
+    }
+    
+    .order-md-first {
+      order: -1;
+    }
+    
+    .order-md-last {
+      order: 6;
+    }
+  }
+
+.game-imput {
+    background-color: #080b04;
+    padding: 15px;
+    border: 2px solid rgb(11, 86, 81);
+    border-radius: 10px;
+}
+
+
+.board {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-gap: 1em 1em;
+    gap: 1em 1em;
+    flex: 1 1;
+}
+
+.flip-card.wasNotRevealed {
+    opacity: .35;
+}
+
+.flip-card {
+    background-color: initial;
+    width: 110px;
+    height: 110px;
+    cursor: pointer;
+}
+
+.img-bomb {
+    margin-top: 1.7rem;
+}
+
+@keyframes shine {
+  0% {
+    filter: drop-shadow(0 0 0 transparent);
+  }
+  50% {
+    filter: drop-shadow(0 0 10px #fff);
+  }
+  100% {
+    filter: drop-shadow(0 0 0 transparent);
+  }
+}
+
+.img-bomb {
+  animation: shine 2s;
+}
+
+
+@media (max-width: 1095px) {
+    .flip-card {
+        width: 85px;
+        height: 85px;
+    }
+
+    .img-bomb {
+        margin-top: 0.8rem;
+    }
+}
+
+
+ .box {
+    background-color: initial;
+}
+
+ .game {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+   
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+}
+
+.flip-card-front {
+    background: linear-gradient(135.41deg, #63aee0.47%, #09dcae 99.56%);
+    opacity: .45;
+}
+
+.flip-card-front:hover {
+    opacity: 1;
+}
+
+.flip-card-front {
+    color: #000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.cell {
+    border-radius: 4px;
+    line-height: 45px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 600;
+    height: 100px;
+    width: 100px;
+} 
+
+
+@media(max-width: 768px) {
+    .flip-card {
+        background-color: initial;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+    }
+}
+
+
+.input-mines {
+background-color:#080b04 ;
+border-color:#09dcae ;
+padding: 0.8rem;
+}
+
+.input-mines:focus {
+    background-color: #000;
+    border-color: #09dcae;
+}
+
+.botao-dropdawn  {
+    border: 1px solid #09dcae;
+    padding: 0.8rem;
+}
+
+.dropdown-menu {
+    background-color: #000;
+    border: 1px solid #09dcae;
+    width: 100%;
+}
+
+.dropdown-menu a {
+    color: #fff;
+}
+
+.botao-comecar {
+  background: linear-gradient(135.41deg, #49efde.47%, #24a0bc 99.56%);
+  color: #fff;
+}
+.dropdown-item:focus, .dropdown-item:hover{
+  background-color:#10231f ;
+  color: white;
+}
+
+.botao-comecar:hover {
+  color: white;
+  opacity: 0.8;
+}
+
+.cell-top.active {
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  transition: transform 0.5s ease-in-out;
+  background-image: url(/assets/img/bomb.fd702b50.svg);
+  transition: background 0.5s ease-in-out;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 1.2s;
+  opacity: 1;
+  background-color: rgb(159,13,38);
+}
+
+.cell-top {
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: transform 0.5s ease-in-out;
+  transition: 1.2s;
+  border-radius: 4px;
+}
+
+
+
+
+
+/* #bomb-animate1,
+#bomb-animate2,
+#bomb-animate3,
+#bomb-animate4,
+#bomb-animate5,
+#bomb-animate6,
+#bomb-animate7,
+#bomb-animate8,
+#bomb-animate9,
+#bomb-animate10,
+#bomb-animate11,
+#bomb-animate12 */
+
+

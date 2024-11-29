@@ -1,0 +1,403 @@
+.crash-block {
+    font-weight: 700;
+    margin: 0 auto;
+    width: 100%;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    padding: 5px 5px 5px 0px;
+    border-radius:4px;
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+}
+
+.outcome-window_top {
+    top: 20px;
+    left: 50%;
+    margin-left: 10px;
+    transform: translateX(-50%);
+}
+
+.outcome-window {
+    position: absolute;
+    /* z-index: 50; */
+    background: var(--color-outcome-window);
+    padding: 20px 40px;
+    border-radius: 12px;
+    border: 2px solid #44d13a;
+    display: none;
+}
+
+.outcome-window_won__coeff {
+    color: #44d13a;
+}
+
+.crash-window-win .outcome-window__text {
+    font-weight: 400;
+}
+
+.outcome-window_won-wrapper {
+    color: #44d13a;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+[class^="myicon-"],
+[class*=" myicon-"] {
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.crash-block .crash {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.cone {
+    display: inline-block;
+    width: max(300vw, 300vh);
+    height: max(300vw, 300vh);
+    background: #FFF;
+    background-image: repeating-conic-gradient(#000 0% 1%, #0C0C0C 1% 2%);
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    animation: cone 60s linear infinite;
+}
+
+.vertical {
+    top: 0px;
+    left: 0px;
+    width: 25px;
+    height: 100%;
+    border-right: 1px solid #FFF3;
+    background-size: 20% auto;
+    background-position-x: center;
+    background-position-y: 0px;
+    background-repeat: repeat-y;
+    background-image: url(https://cassino.mobi/Games/Aviator/res/dotv.svg);
+    animation: rule_vertical 20s linear infinite;
+}
+
+rule {
+    position: absolute;
+    display: inline-block;
+}
+
+
+.horizontal {
+    bottom: 0px;
+    left: 0px;
+    height: 25px;
+    width: 100%;
+    border-top: 1px solid #FFF3;
+    background-size: auto 20%;
+    background-position-x: 100%;
+    background-position-y: center;
+    background-repeat: repeat-x;
+    background-image: url(https://cassino.mobi/Games/Aviator/res/doth.svg);
+    animation: rule_horizontal 20s linear infinite;
+}
+
+.curve {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+}
+
+.filtro-amarelo {
+    filter: url(#filtro-amarelo);
+}
+
+.aviao img {
+    max-width: 130px;
+    position: relative;
+}
+
+.outcome-window__coeff {
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.chart-info {
+    font-family: 'Open Sans', sans-serif;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    font-weight: 800;
+    font-size: 60px;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 30px;
+}
+
+.outcome-window__text {
+    color: #b4b4b4;
+    margin-top: 3px;
+    font-size: 13px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* meu css */
+
+.carta-aviator {
+    background: rgb(37, 102, 55);
+    background: radial-gradient(circle, rgba(37, 102, 55, 1) 0%, rgba(8, 43, 26, 1) 100%);
+}
+.span-aposta {
+    background-color: #0C0C0C;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: rgb(37, 102, 55);
+    background: radial-gradient(circle, rgba(37, 102, 55, 1) 0%, rgba(8, 43, 26, 1) 100%);
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.carta-aposta { 
+  border-radius: 8px;
+    background: rgb(37, 102, 55);
+    background: radial-gradient(circle, rgba(37, 102, 55, 1) 0%, rgba(8, 43, 26, 1) 100%);
+    padding: 0.50rem;
+}
+
+.carta-aposta2 {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 5px;
+    background-color:#080b04 ;
+    border-radius: 8px;
+    padding: 0.35rem;
+}
+
+.botao-util {
+    padding: 11px;
+    background-color: transparent;
+    background-image: url(https://aviator-demo.spribegaming.com/minus-in-circle.de5c67298d5ab197.svg);
+    background-size: cover;
+    border: none;
+}
+
+
+
+
+
+.botao-util2 {
+    padding: 11px;
+    background-size: cover;
+    border: none;
+    background-color: transparent;
+    background-image: url(https://aviator-demo.spribegaming.com/plus-in-circle.3440127f08f179fd.svg);
+}
+
+.spinner .input {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 35px);
+    height: 100%;
+}
+
+.spinner .input input {
+    width: 100%;
+    border: 0;
+    background: transparent;
+    color: #fff;
+    text-align: inherit;
+    padding: 0;
+}
+
+.bet-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 140px;
+}
+
+ .bets-opt-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: #9ea0a3;
+    width: 100%;
+}
+
+ .bets-opt-list .bet-opt {
+    font-size: 14px;
+    width: 64px;
+    height: 20px;
+    margin-top: 4px;
+    line-height: 1;
+    padding: 0;
+    background: transparent;
+    border: 1px solid;
+}
+
+.botao-apostar {
+    padding-left: 100px;
+}
+
+.botao-apostar2 {
+    background-color: #44d13a;
+    color: #000000;
+}
+
+.botao-apostar2 span,label {
+    cursor: pointer;
+}
+
+.botao-apostar2:hover {
+    color: #000000;
+    opacity: 0.8;
+}
+
+.game-footer {
+    background: #080b04;
+ border-radius: 10px;
+}
+
+.double-footer-wrapper {
+    padding: 15px 0;
+}
+
+.simplebar-wrapper {
+    overflow: hidden;
+    width: inherit;
+    height: inherit;
+    max-width: inherit;
+    max-height: inherit;
+}
+
+.simplebar-height-auto-observer-wrapper {
+    box-sizing: inherit !important;
+    height: 100%;
+    width: 100%;
+    max-width: 1px;
+    position: relative;
+    float: left;
+    max-height: 1px;
+    overflow: hidden;
+    z-index: -1;
+    padding: 0;
+    margin: 0;
+    pointer-events: none;
+    flex-grow: inherit;
+    flex-shrink: 0;
+    flex-basis: 0;
+}
+
+.simplebar-height-auto-observer {
+    box-sizing: inherit;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1000%;
+    width: 1000%;
+    min-height: 1px;
+    min-width: 1px;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.simplebar-mask {
+    direction: inherit;
+    position: absolute;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: auto !important;
+    height: auto !important;
+    z-index: 0;
+}
+
+.simplebar-offset {
+    direction: inherit !important;
+    box-sizing: inherit !important;
+    resize: none !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    -webkit-overflow-scrolling: touch;
+}
+
+.simplebar-content-wrapper {
+    direction: inherit;
+    box-sizing: border-box !important;
+    position: relative;
+    display: block;
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.double-history-line {
+    display: flex;
+}
+
+.crash-item {
+    padding: 5px;
+    margin: 3px;
+    border-radius: 4px;
+    color: #b4b4b4;
+}
+
+.simplebar-placeholder {
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+    pointer-events: none;
+}

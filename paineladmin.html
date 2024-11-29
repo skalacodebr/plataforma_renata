@@ -1,0 +1,1773 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+
+    <title>casa renata</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesdesign" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <!-- preloader css -->
+    <link rel="stylesheet" href="assets/css dason/preloader.min.css" type="text/css" />
+
+    <!-- Bootstrap Css -->
+    <link href="assets/css dason/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css dason/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css dason/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+    <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet"
+        type="text/css" />
+
+    <!-- Responsive datatable examples -->
+    <link href="assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet"
+        type="text/css" />
+
+    <link href="assets/libs/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="assets/libs/flatpickr/flatpickr.min.css">
+
+    <link rel="stylesheet" href="assets/cssprincipal/estilo.css">
+    <link rel="stylesheet" href="assets/cssprincipal/paineladmin.css">
+
+</head>
+
+<body class="principal">
+    <header>
+        <div class="cor-header p-3 ">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-7 col-md-6 d-flex justify-content-end p-0">
+                            <h4 class="text-white">Logo</h4>
+                        </div>
+                        <div class="col-5 col-md-6 d-flex justify-content-end ">
+                            <div class="btn-group ">
+
+                                <button type="button" class="btn btn-navbar px-2 py-0"
+                                    style="background-color: #17181f; color: rgb(150, 150, 150);"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="mdi mdi-account-circle fs-2  "></i>
+                                </button>
+                                <div class="dropdown-menu color-dropd">
+                                    <a class="dropdown-item" href="index.html"><i
+                                            class="mdi mdi-desktop-mac-dashboard font-size-16 align-middle me-1"></i>Site</a>
+
+                                    <a class="dropdown-item skala-item" href="#home1"><i
+                                            class="mdi mdi-chart-pie font-size-16 align-middle me-1"></i>Dashboard</a>
+
+                                    <a class="dropdown-item skala-item" href="#profile1"><i
+                                            class="mdi mdi-account-group font-size-16 align-middle me-1"></i>Usúarios</a>
+
+                                    <a class="dropdown-item skala-item" href="#messages1"> <i class="mdi mdi-badge-account-horizontal font-size-16 me-2"></i>KYC</a>
+
+                                    <a class="dropdown-item skala-item" href="#teste4"> <i
+                                            class="mdi mdi-account-multiple-plus-outline me-1"></i>Afiliados</a>
+
+                                    <a class="dropdown-item skala-item" href="#teste3"><i
+                                            class="mdi mdi-bank-transfer font-size-16 align-middle me-1"></i>Transações</a>
+
+                                    <a class="dropdown-item skala-item" href="#teste2"><i
+                                            class="mdi mdi-bank-transfer-out font-size-16 align-middle me-1"></i>Saques</a>
+
+                                    <a class="dropdown-item skala-item" href="#gameAnalitics"><i class="mdi mdi-chart-bar font-size-16 me-1"></i>Analize Game</a>
+
+                                    <div class="dropdown-divider"></div>
+
+                                    <a class="dropdown-item" href="loginadmin.html"> <i
+                                            class="mdi mdi-logout font-size-16 align-middle me-1"></i>Sair</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 ">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs nav-tabs-custom nav-justified" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-bs-toggle="tab" href="#home1" role="tab"
+                                    aria-selected="true">
+                                    <span class="d-block d-sm-none"><i class="mdi mdi-chart-pie font-size-16"></i></span>
+                                    <span class="d-none d-sm-block">Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#profile1" role="tab"
+                                    aria-selected="false">
+                                    <span class="d-block d-sm-none"><i class="mdi mdi-account-group font-size-16"></i></span>
+                                    <span class="d-none d-sm-block">Usuários</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#messages1" role="tab"
+                                    aria-selected="false">
+                                    <span class="d-block d-sm-none"><i class="mdi mdi-badge-account-horizontal font-size-16"></i></span>
+                                    <span class="d-none d-sm-block">KYC</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#teste4" role="tab">
+                                    <span class="d-block d-sm-none"><i class="mdi mdi-account-cash font-size-16"></i></span>
+                                    <span class="d-none d-sm-block">Afiliados</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#teste3" role="tab">
+                                    <span class="d-block d-sm-none"><i class="mdi mdi-bank-transfer font-size-16"></i></span>
+                                    <span class="d-none d-sm-block">Transações</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#teste2" role="tab">
+                                    <span class="d-block d-sm-none"><i class="mdi mdi-bank-transfer-out font-size-16"></i></span>
+                                    <span class="d-none d-sm-block">Solicitações de saque</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#gameAnalitics" role="tab">
+                                    <span class="d-block d-sm-none"><i class="mdi mdi-chart-bar font-size-16"></i></span>
+                                    <span class="d-none d-sm-block">Análise de Games</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content p-3 text-muted">
+                            <div class="tab-pane active p-3" id="home1" role="tabpanel">
+                                <div class="row mb-3">
+                                    <div class="col-md-4 mb-0 mb-md-3">
+                                        <button type="button"
+                                            class="btn btn-success mt-4 mb-4 waves-effect waves-light p-2 ">Game
+                                            Analytics</button>
+
+                                        <div class="">
+                                            <lable for="interval" class="form-label">Selecione o período</lable>
+                                            <select id="interval" class="form-select mt-2 w-75">
+                                                <option value="0">Hoje</option>
+                                                <option value="1">Ontem</option>
+                                                <option value="3">Últimos 5 dias</option>
+                                                <option value="7">Últimos 7 dias</option>
+                                                <option value="15">Últimos 15 dias</option>
+                                                <option value="30">Últimos 30 dias</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 col-md-4">
+                                        <div class="card  color-card">
+                                            <div class="card-body">
+                                                <p class="text-muted">Total de Apostas</p>
+                                                <p class="mb-0 text-muted">Qtd<span id="total_bets"
+                                                        class="ms-2 font-size-18 text-white">495</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6 col-md-4">
+                                        <div class="card shadow-sm color-card">
+                                            <div class="card-body">
+                                                <p class="text-muted">Total de Apostas</p>
+                                                <p class="mb-0 text-muted">Qtd<span id="total_bets"
+                                                        class="ms-2 font-size-18 text-white">495</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class=" col-6 col-md-4">
+                                        <div class="card shadow-sm color-card">
+                                            <div class="card-body">
+                                                <p class="text-muted">Total de Apostas</p>
+                                                <p class="mb-0 text-muted">Qtd<span id="total_bets"
+                                                        class="ms-2 font-size-18 text-white">495</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="card shadow-sm color-card">
+                                            <div class="card-body">
+                                                <p class="text-muted">Total de Apostas</p>
+                                                <p class="mb-0 text-muted">Qtd<span id="total_bets"
+                                                        class="ms-2 font-size-18 text-white">495</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="card shadow-sm color-card">
+                                            <div class="card-body">
+                                                <p class="text-muted">Total de Apostas</p>
+                                                <p class="mb-0 text-muted">Qtd<span id="total_bets"
+                                                        class="ms-2 font-size-18 text-white">495</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="card shadow-sm color-card">
+                                            <div class="card-body">
+                                                <p class="text-muted">Total de Apostas</p>
+                                                <p class="mb-0 text-muted">Qtd<span id="total_bets"
+                                                        class="ms-2 font-size-18 text-white">495</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div id="pie_chart" data-colors='["#218838", "#17181f","#fff"]' class="apex-charts"
+                                        dir="ltr"></div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane" id="profile1" role="tabpanel">
+                                <div class="row mb-3">
+                                    <div class="col-md-3">
+                                        <button type="button"
+                                            class="btn mt-4 btn-success waves-effect waves-light">Adicionar
+                                            Usúario</button>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-5">
+                                    <div class="col-12">
+                                        <table id="example" class="table table-bordered dt-responsive  nowrap w-100">
+                                            <thead>
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th>CPF</th>
+                                                    <th>Username</th>
+                                                    <th>E-mail</th>
+                                                    <th>Senha</th>
+                                                    <th>Token</th>
+                                                    <th>Data de nascimento</th>
+                                                    <th>Telefone</th>
+                                                    <th>Saldo total</th>
+                                                    <th>Saldo geral</th>
+                                                    <th>Primeiro Depósito</th>
+                                                    <th>Código para Afiliação</th>
+                                                    <th>Total de depósito</th>
+                                                    <th>Total de saques</th>
+                                                    <th>Total Sacado</th>
+                                                    <th>Cadastrado em</th>
+                                                    <th>Editar</th>
+                                                    <th>Deletar</th>
+                                                    <th>Add saldo</th>
+                                                    <th>Add bonus</th>
+                                                    <th>Histórico</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Garrett Winters</td>
+                                                    <td>Accountant</td>
+                                                    <td>Tokyo</td>
+                                                    <td>63</td>
+                                                    <td>2011-07-25</td>
+                                                    <td>$170,750</td>
+                                                    <td>$170,750</td>
+                                                    <td>$170,750</td>
+                                                    <td>$170,750</td>
+                                                    <td>$170,750</td>
+                                                    <td>$170,750</td>
+                                                    <td>$170,750</td>
+                                                    <td>$170,750</td>
+                                                    <td>$170,750</td>
+                                                    <td>$170,750</td>
+                                                    <td>$170,750</td>
+                                                    <td>
+                                                        <!-- Extra Large modal button -->
+                                                        <button type="button"
+                                                            class="btn botao-utilidades waves-effect waves-light"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target=".bs-example-modal-xl">
+                                                            <font style="">
+                                                                <font style="">Editar
+                                                                </font>
+                                                            </font>
+                                                        </button>
+                                                    </td>
+                                                    <td>
+                                                        <button
+                                                            class="btn botao-utilidades chamar-alerta-usuario">Deletar</button>
+                                                    </td>
+                                                    <td>
+                                                        <button type="button" class="btn botao-utilidades"
+                                                            data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                            data-bs-whatever="@getbootstrap">
+                                                            <font style="">
+                                                                <font style="">Add Saldo</font>
+                                                            </font>
+                                                        </button>
+                                                    </td>
+                                                    <td>
+                                                        <button type="button" class="btn botao-utilidades"
+                                                            data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                            data-bs-whatever="@getbootstrap">
+                                                            <font style="">
+                                                                <font style="">Add Bônus</font>
+                                                            </font>
+                                                        </button>
+                                                    </td>
+                                                    <td>
+                                                        <!-- Extra Large modal button -->
+                                                        <button type="button"
+                                                            class="btn botao-utilidades waves-effect waves-light btn-history-usario">
+                                                            <font style="">
+                                                                <font style="">Histórico</font>
+                                                            </font>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Garrett Winters</td>
+                                                    <td>Accountant</td>
+                                                    <td>Tokyo</td>
+                                                    <td>63</td>
+                                                    <td>2011-07-25</td>
+                                                    <td>$170,750</td>
+                                                    <td>$170,750</td>
+                                                    <td>$170,750</td>
+                                                    <td>$170,750</td>
+                                                    <td>$170,750</td>
+                                                    <td>$170,750</td>
+                                                    <td>$170,750</td>
+                                                    <td>$170,750</td>
+                                                    <td>$170,750</td>
+                                                    <td>$170,750</td>
+                                                    <td>$170,750</td>
+                                                    <td>
+                                                        <!-- Extra Large modal button -->
+                                                        <button type="button"
+                                                            class="btn botao-utilidades waves-effect waves-light"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target=".bs-example-modal-xl">
+                                                            <font style="">
+                                                                <font style="">Editar
+                                                                </font>
+                                                            </font>
+                                                        </button>
+                                                    </td>
+                                                    <td>
+                                                        <button
+                                                            class="btn botao-utilidades chamar-alerta">Deletar</button>
+                                                    </td>
+                                                    <td>
+                                                        <button type="button" class="btn botao-utilidades"
+                                                            data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                            data-bs-whatever="@getbootstrap">
+                                                            <font style="">
+                                                                <font style="">Add Saldo</font>
+                                                            </font>
+                                                        </button>
+                                                    </td>
+                                                    <td>
+                                                        <button type="button" class="btn botao-utilidades"
+                                                            data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                            data-bs-whatever="@getbootstrap">
+                                                            <font style="">
+                                                                <font style="">Add Bônus</font>
+                                                            </font>
+                                                        </button>
+                                                    </td>
+                                                    <td>
+                                                        <!-- Extra Large modal button -->
+                                                        <button type="button"
+                                                            class="btn botao-utilidades waves-effect waves-light btn-history">
+                                                            <font style="">
+                                                                <font style="">Histórico</font>
+                                                            </font>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="messages1" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <lable for="interval" class="form-label">Selecione o Status</lable>
+                                        <select id="interval" class="form-select mt-2">
+                                            <option value="0">Documentos recebidos</option>
+                                            <option value="1">Docodumentos verificados</option>
+                                            <option value="3">Documentos recusados</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-12">
+                                        <div class="card p-0">
+                                            <div class="card-body p-0">
+                                                <h1 class="fs-5 form-label">
+                                                    Veja abaixo os documentos enviados
+                                                    para verificação de identidade.
+                                                </h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-12">
+                                        <div class="card carde-documentos">
+                                            <div class="card-body">
+                                                <div class="row mt-4">
+                                                    <div class="col-md-6 form-label">
+                                                        <div class="card m-0">
+                                                            <div class="card-body carde-documentos p-0">
+                                                                <p>E-mail do Usuário:
+                                                                    <span class="fw-bold">nape850@gmail.com</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 form-label">
+                                                        <div class="card">
+                                                            <div class="card-body carde-documentos p-0">
+                                                                <p>CPF do Usuário:
+                                                                    <span class="fw-bold"></span>022.022.202-22
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 form-label mb-0">
+                                                        <div class="card">
+                                                            <div class="card-body carde-documentos p-0">
+                                                                <p>
+                                                                    Frente do documentos
+                                                                </p>
+                                                                <img class="img-fluid" src="assets/img/frenterg.png"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 form-label mb-0">
+                                                        <div class="card">
+                                                            <div class="card-body carde-documentos p-0">
+                                                                <p>
+                                                                    Verso do documento
+                                                                </p>
+                                                                <img class="img-fluid" src="assets/img/frenterg.png"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label for="update_docs_status" class="form-label">Atualizar
+                                                            status de verificação</label>
+                                                        <select data-id="33" class="form-select update_docs_status"
+                                                            style="background-color: #191e22;">
+                                                            <option value="unsent_documents">Documentos ainda não
+                                                                enviados pelo usuário</option>
+                                                            <option value="documents_sent">Documentos recebidos
+                                                                (aguardando aprovação)</option>
+                                                            <option value="verified_documents" selected="">Documentos
+                                                                verificados</option>
+                                                            <option value="unverified_documents">Documentos não
+                                                                verificados</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <span
+                                                class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-success">Documentos
+                                                verificados</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-4 ">
+                                    <div class="col-12">
+                                        <div class="card carde-documentos">
+                                            <div class="card-body">
+                                                <div class="row mt-4">
+                                                    <div class="col-md-6 form-label">
+                                                        <div class="card m-0">
+                                                            <div class="card-body carde-documentos p-0">
+                                                                <p>E-mail do Usuário:
+                                                                    <span class="fw-bold">nape850@gmail.com</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 form-label">
+                                                        <div class="card">
+                                                            <div class="card-body carde-documentos p-0">
+                                                                <p>CPF do Usuário:
+                                                                    <span class="fw-bold"></span>022.022.202-22
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 form-label mb-0">
+                                                        <div class="card">
+                                                            <div class="card-body carde-documentos p-0">
+                                                                <p>
+                                                                    Frente do documentos
+                                                                </p>
+                                                                <img class="img-fluid" src="assets/img/frenterg.png"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 form-label mb-0">
+                                                        <div class="card">
+                                                            <div class="card-body carde-documentos p-0">
+                                                                <p>
+                                                                    Verso do documento
+                                                                </p>
+                                                                <img class="img-fluid" src="assets/img/frenterg.png"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label for="update_docs_status" class="form-label">Atualizar
+                                                            status de verificação</label>
+                                                        <select data-id="33" class="form-select update_docs_status"
+                                                            style="background-color: #191e22;">
+                                                            <option value="unsent_documents">Documentos ainda não
+                                                                enviados pelo usuário</option>
+                                                            <option value="documents_sent">Documentos recebidos
+                                                                (aguardando aprovação)</option>
+                                                            <option value="verified_documents" selected="">Documentos
+                                                                verificados</option>
+                                                            <option value="unverified_documents">Documentos não
+                                                                verificados</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <span
+                                                class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-success">Documentos
+                                                verificados</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="teste4" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row d-flex justify-content-end ">
+                                                    <div class="col-md-6 mb-4 d-flex justify-content-end ">
+                                                        <button style=" font-size: 12px;" type="button"
+                                                            class="me-3 btn btn-primary waves-effect waves-light">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="20" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class=" mb-1 me-1 feather feather-clipboard">
+                                                                <path
+                                                                    d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2">
+                                                                </path>
+                                                                <rect x="8" y="2" width="8" height="4" rx="1" ry="1">
+                                                                </rect>
+                                                            </svg>Informações Detalhadas
+                                                        </button>
+                                                        <button style="font-size: 12px;" class="btn btn-success">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="20" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="mb-1 me-1 feather feather-user-check">
+                                                                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2">
+                                                                </path>
+                                                                <circle cx="8.5" cy="7" r="4"></circle>
+                                                                <polyline points="17 11 19 13 23 9"></polyline>
+                                                            </svg>Adicionar um Afiliado
+                                                        </button>
+                                                    </div>
+
+
+                                                    <div class="col-12">
+                                                        <table id="twoexemplo"
+                                                            class="table table-bordered dt-responsive  nowrap w-100">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>ID</th>
+                                                                    <th>ID de Usúario</th>
+                                                                    <th>CPF</th>
+                                                                    <th>Nome</th>
+                                                                    <th>Username</th>
+                                                                    <th>E-mail</th>
+                                                                    <th>Password</th>
+                                                                    <th>Data de nascimento</th>
+                                                                    <th>phone</th>
+                                                                    <th>Editar</th>
+                                                                    <th>Deletar</th>
+                                                                    <th>Zerar CPA</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Tiger Nixon</td>
+                                                                    <td>System Architect</td>
+                                                                    <td>Edinburgh</td>
+                                                                    <td>61</td>
+                                                                    <td>2011-04-25</td>
+                                                                    <td>$320,800</td>
+                                                                    <td>61</td>
+                                                                    <td>2011-04-25</td>
+                                                                    <td>$320,800</td>
+                                                                    <td> <button type="button"
+                                                                            class="btn  botao-utilidades"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target=".modal-editar-afiliados">
+                                                                            <font style="vertical-align: inherit;">
+                                                                                <font style="vertical-align: inherit;">
+                                                                                    Editar</font>
+                                                                            </font>
+                                                                        </button></td>
+                                                                    <td><button
+                                                                            class="btn botao-utilidades chamar-alerta-afiliados">Deletar</button>
+                                                                    </td>
+                                                                    <td><button
+                                                                            class="btn botao-utilidades chamar-reset-afiliados">Zeras
+                                                                            CPA</button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Garrett Winters</td>
+                                                                    <td>Accountant</td>
+                                                                    <td>Tokyo</td>
+                                                                    <td>63</td>
+                                                                    <td>2011-07-25</td>
+                                                                    <td>$170,750</td>
+                                                                    <td>63</td>
+                                                                    <td>2011-07-25</td>
+                                                                    <td>$170,750</td>
+                                                                    <td>2011-07-25</td>
+                                                                    <td>$170,750</td>
+                                                                    <td>$170,750</td>
+                                                                </tr>
+                                                            </tbody>
+
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="teste3" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row d-flex justify-content-end">
+                                                    <div class="col-6 d-flex justify-content-end align-items-center">
+                                                        <select id="transactions_status" class="form-select">
+                                                            <option value="">Todas as transações</option>
+                                                            <option value="PAID">Pagas</option>
+                                                            <option value="0">Não pagas</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="col-12 mt-4">
+                                                        <table id="threeexemplo"
+                                                            class="table table-bordered dt-responsive nowrap w-100">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>ID</th>
+                                                                    <th>Tipo</th>
+                                                                    <th>Valor</th>
+                                                                    <th>Data/hora</th>
+                                                                    <th>ID de transação</th>
+                                                                    <th>QR code pix</th>
+                                                                    <th>Status</th>
+                                                                    <th>Primeiro depósito?</th>
+                                                                    <th>Comissão paga?</th>
+                                                                    <th>Bônus ativo?</th>
+                                                                    <th>CPF</th>
+                                                                    <th>Email do usuário</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Tiger Nixon</td>
+                                                                    <td>System Architect</td>
+                                                                    <td>Edinburgh</td>
+                                                                    <td>61</td>
+                                                                    <td>2011-04-25</td>
+                                                                    <td>$320,800</td>
+                                                                    <td class="text-center">
+                                                                        <span
+                                                                            class=" badge rounded-pill bg-success">Pago
+                                                                        </span>
+                                                                    </td>
+                                                                    <td class="text-center"><span
+                                                                            class=" badge rounded-pill bg-success">Sim
+                                                                        </span></td>
+                                                                    <td class="text-center"><span
+                                                                            class="bg-secondary bg-gradient text-white rounded-pill badge ">Não
+                                                                            pago</span></td>
+                                                                    <td class="text-center"><span
+                                                                            class=" badge rounded-pill bg-success">Ativo
+                                                                        </span></td>
+                                                                    <td>$320,800</td>
+                                                                    <td>$320,800</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Garrett Winters</td>
+                                                                    <td>Accountant</td>
+                                                                    <td>Tokyo</td>
+                                                                    <td>63</td>
+                                                                    <td>2011-07-25</td>
+                                                                    <td>$170,750</td>
+                                                                    <td>2011-07-25</td>
+                                                                    <td>$170,750</td>
+                                                                    <td>2011-07-25</td>
+                                                                    <td>$170,750</td>
+                                                                    <td>2011-07-25</td>
+                                                                    <td>$170,750</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="teste2" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row d-flex justify-content-end">
+                                                    <div class="col-6 d-flex justify-content-end align-items-center">
+                                                        <select id="withdrawals_status" class="form-select">
+                                                            <option value="">Todas as solicitações</option>
+                                                            <option value="pending">Pendente</option>
+                                                            <option value="approved">Aprovada</option>
+                                                            <option value="rejected">Rejeitada</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="col-12 mt-4">
+                                                        <table id="fourexemplo"
+                                                            class="table table-bordered dt-responsive  nowrap w-100">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>ID</th>
+                                                                    <th>CPF</th>
+                                                                    <th>E-mail</th>
+                                                                    <th>Valor</th>
+                                                                    <th>Total depositado</th>
+                                                                    <th>Total de ganho indicações</th>
+                                                                    <th>Bônus status</th>
+                                                                    <th>Status</th>
+                                                                    <th>Criado em</th>
+                                                                    <th>Atualizado em </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Tiger Nixon</td>
+                                                                    <td>System Architect</td>
+                                                                    <td>Edinburgh</td>
+                                                                    <td>61</td>
+                                                                    <td>2011-04-25</td>
+                                                                    <td>$320,800</td>
+                                                                    <td class="text-center"><span
+                                                                            class="bg-secondary bg-gradient text-white rounded-pill badge ">Inativo</span>
+                                                                    </td>
+                                                                    <td><select class="form-select seletor-solicitacao"
+                                                                            data-id="472">
+                                                                            <option value="pending" selected="">Pendente
+                                                                            </option>
+                                                                            <option value="approved">Aprovado</option>
+                                                                            <option value="rejected">Rejeitado</option>
+                                                                        </select></td>
+                                                                    <td>$320,800</td>
+                                                                    <td>$320,800</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Garrett Winters</td>
+                                                                    <td>Accountant</td>
+                                                                    <td>Tokyo</td>
+                                                                    <td>63</td>
+                                                                    <td>2011-07-25</td>
+                                                                    <td>$170,750</td>
+                                                                    <td>2011-07-25</td>
+                                                                    <td>$170,750</td>
+                                                                    <td>2011-07-25</td>
+                                                                    <td>$170,750</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="gameAnalitics" role="tabpanel">
+                                <div class="row mt-3 ">
+                                    <div class="col-md-12 d-flex justify-content-center">
+                                        <div>
+                                            <h4 class="text-center">Análise <br> <span class="mt-2">de</span> <br> <span
+                                                    class="titulo-analize">Games</span></h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3 d-flex align-items-center">
+                                    <div class="col-md-4">
+                                        <div class="card card-analize">
+                                            <div class="card-body text-center p-4 d-flex flex-column">
+                                                <span class="font-size-17 fw-bold text-muted">Ganhos Diários</span>
+                                                <span class="font-size-17 text-muted">6.510,23</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card card-analize">
+                                            <div class="card-body d-flex flex-column text-center">
+                                                <Span class="font-size-24 fw-bold text-white">Total acumulado</Span>
+                                                <span class="font-size-16"><span class="text-success">Lucro</span>/
+                                                    <span class="text-danger"> Prejuizo</span></span>
+                                                <span class="font-size-24 text-success">3.510,23</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card card-analize ">
+                                            <div class="card-body text-center calendario">
+                                                <div class="mb-3">
+                                                    <label class="form-label label-calendario">Calendario</label>
+                                                    <input type="text" class="form-control input-calendario w-75 m-auto"
+                                                        id="datepicker-basic">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-md-12 ">
+                                        <div class="card card-analize">
+                                            <div class="card-body pb-0">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="card  card-ganhos">
+                                                            <div class="card-body ">
+                                                                <div class="d-flex flex-column text-center">
+                                                                    <span class="font-size-16 text-white">Ganhos da
+                                                                        casa</span>
+                                                                    <span class="font-size-20 fw-bold text-success">R$
+                                                                        7.408,48</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="card card-ganhos ">
+                                                            <div class="card-body">
+                                                                <div class="d-flex flex-column text-center">
+                                                                    <span class="font-size-16 text-white">Perdas da
+                                                                        Casa</span>
+                                                                    <span class="font-size-20 fw-bold text-danger">R$
+                                                                        7.408,48</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="card card-ganhos">
+                                                            <div class="card-body">
+                                                                <div class="d-flex flex-column text-center">
+                                                                    <span class="font-size-16 text-white">Apostas
+                                                                        ganhas</span>
+                                                                    <span class="font-size-20 fw-bold text-success">R$
+                                                                        7.408,48</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="card card-ganhos ">
+                                                            <div class="card-body">
+                                                                <div class="d-flex flex-column text-center">
+                                                                    <span class="font-size-16 text-white">Apostas
+                                                                        perdidas</span>
+                                                                    <span class="font-size-20 fw-bold text-danger">R$
+                                                                        7.408,48</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 ">
+                                        <div class="card card-analize">
+                                            <div class="card-header text-center card-ganhos"><span
+                                                    class="font-size-18 fw-bold text-white">Double</span>
+                                            </div>
+                                            <div class="card-body pb-0">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="row">
+                                                            <div class="col-md-12 mb-3">
+                                                                <p class="font-size-16 text-white fw-bold">Total:</p>
+                                                                <div class="card">
+                                                                    <div
+                                                                        class="card-header text-center card-ganhos p-1">
+                                                                        <span
+                                                                            class="text-white font-size-14 ">Lucro/Prejuizo</span>
+                                                                    </div>
+                                                                    <div class="card-body card-ganhos">
+                                                                        <h6 class="text-center">
+                                                                            <small class="small-ganhos">R$</small>
+                                                                            <span id="double_profit"
+                                                                                class="fonte-ganhos text-success">3.117,60</span>
+                                                                        </h6>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row px-4">
+                                                            <div class="col-md-12">
+                                                                <div class="row">
+                                                                    <div class="col-md-6 ">
+                                                                        <div>
+                                                                            <h5
+                                                                                class="card-title font-size-12 text-center mb-3 text-muted">
+                                                                                Ganhos
+                                                                                da
+                                                                                Casa
+                                                                            </h5>
+
+                                                                            <h6 class="text-center">
+                                                                                <small class="text-muted">R$</small>
+                                                                                <span id="double_ganhos_da_casa"
+                                                                                    class="font-size-20 text-muted">5.830,20</span>
+                                                                            </h6>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6 ">
+                                                                        <div>
+                                                                            <h5
+                                                                                class="card-title font-size-12 text-center mb-3 text-muted">
+                                                                                Ganhos
+                                                                                da
+                                                                                Casa
+                                                                            </h5>
+
+                                                                            <h6 class="text-center">
+                                                                                <small class="text-muted">R$</small>
+                                                                                <span id="double_ganhos_da_casa"
+                                                                                    class="font-size-20 text-muted">830,20</span>
+                                                                            </h6>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <hr>
+                                                                    </div>
+                                                                    <div class="col-md-6 ">
+                                                                        <div>
+                                                                            <h5
+                                                                                class="card-title font-size-12 text-center mb-3 text-muted">
+                                                                                Ganhos
+                                                                                da
+                                                                                Casa
+                                                                            </h5>
+
+                                                                            <h6 class="text-center">
+                                                                                <small class="text-muted">R$</small>
+                                                                                <span id="double_ganhos_da_casa"
+                                                                                    class="font-size-20 text-muted">5.830,20</span>
+                                                                            </h6>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6 mb-3">
+                                                                        <div>
+                                                                            <h5
+                                                                                class="card-title font-size-12 text-center mb-3 text-muted">
+                                                                                Ganhos
+                                                                                da
+                                                                                Casa
+                                                                            </h5>
+
+                                                                            <h6 class="text-center">
+                                                                                <small class="text-muted">R$</small>
+                                                                                <span id="double_ganhos_da_casa"
+                                                                                    class="font-size-20 text-muted">830,20</span>
+                                                                            </h6>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <h5 class="card-title text-white text-center font-size-14" style="margin-bottom: 23px;" >Utilizando automação:
+                                                        </h5>
+                                                        <div class="card">
+                                                            <div class="card-header py-2 card-ganhos">
+                                                                <h5 class="card-title font-size-12 text-center mb-0 text-white">
+                                                                    Lucro/Prejuízo</h5>
+                                                            </div>
+                                                            <div class="card-body card-ganhos">
+                                                                <h6 class="text-center">
+                                                                    <small class="small-ganhos">R$</small>
+                                                                    <span id="double_com_automacao_profit"
+                                                                        class="fonte-ganhos text-danger ">-835,50</span>
+                                                                </h6>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row px-4">
+                                                            <div class="col-md-12">
+                                                                <div class="row">
+                                                                    <div class="col-md-6 mt-3">
+                                                                        <div>
+                                                                            <h5 class="card-title font-size-12 text-center mb-3 text-muted">
+                                                                                Ganhos
+                                                                                da
+                                                                                Casa
+                                                                            </h5>
+
+                                                                            <h6 class="text-center">
+                                                                                <small class="text-muted">R$</small>
+                                                                                <span id="double_ganhos_da_casa" class="font-size-20 text-muted">5.830,20</span>
+                                                                            </h6>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6 mt-3">
+                                                                        <div>
+                                                                            <h5 class="card-title font-size-12 text-center mb-3 text-muted">
+                                                                                Ganhos
+                                                                                da
+                                                                                Casa
+                                                                            </h5>
+
+                                                                            <h6 class="text-center">
+                                                                                <small class="text-muted">R$</small>
+                                                                                <span id="double_ganhos_da_casa" class="font-size-20 text-muted">830,20</span>
+                                                                            </h6>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <hr>
+                                                                    </div>
+                                                                    <div class="col-md-6 ">
+                                                                        <div>
+                                                                            <h5 class="card-title font-size-12 text-center mb-3 text-muted">
+                                                                                Ganhos
+                                                                                da
+                                                                                Casa
+                                                                            </h5>
+
+                                                                            <h6 class="text-center">
+                                                                                <small class="text-muted">R$</small>
+                                                                                <span id="double_ganhos_da_casa" class="font-size-20 text-muted">5.830,20</span>
+                                                                            </h6>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6 mb-3">
+                                                                        <div>
+                                                                            <h5 class="card-title font-size-12 text-center mb-3 text-muted">
+                                                                                Ganhos
+                                                                                da
+                                                                                Casa
+                                                                            </h5>
+
+                                                                            <h6 class="text-center">
+                                                                                <small class="text-muted">R$</small>
+                                                                                <span id="double_ganhos_da_casa" class="font-size-20 text-muted">830,20</span>
+                                                                            </h6>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                   
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <!--aviator card ganhos-->
+                                            <div class="col-md-6">
+                                                <div class="card card-analize ">
+                                                    <div class="card-header card-ganhos ">
+                                                        <h4
+                                                            class="card-title font-size-18 text-center  mb-0 text-white">
+                                                            Aviator
+                                                        </h4>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <div class="card card-ganhos">
+                                                                    <div class="card-header py-2 ">
+                                                                        <h5
+                                                                            class="card-title font-size-12 text-center mb-0 text-white">
+                                                                            Lucro/Prejuízo</h5>
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <h6 class="text-center">
+                                                                            <small class="small-ganhos">R$</small>
+                                                                            <span id="aviator_profit"
+                                                                                class="fonte-ganhos text-danger">-213,49</span>
+                                                                        </h6>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                <div>
+                                                                    <h5
+                                                                        class="card-title font-size-12 text-center mb-0 text-muted mb-3">
+                                                                        Ganhos da Casa</h5>
+                                                                    <h6 class="text-center">
+                                                                        <small class="text-muted ">R$</small>
+                                                                        <span id="aviator_ganhos_da_casa"
+                                                                            class="font-size-20 text-muted">400,78</span>
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                <div>
+                                                                    <h5
+                                                                        class="card-title font-size-12 text-center mb-0 text-muted mb-3">
+                                                                        Perdas da Casa</h5>
+                                                                    <h6 class="text-center">
+                                                                        <small class="text-muted">R$</small>
+                                                                        <span id="aviator_perdas_da_casa"
+                                                                            class="font-size-20 text-muted">614,270</span>
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <hr>
+                                                            </div>
+                                                            <div class="col-lg-6 mt-1">
+                                                                <div>
+                                                                    <h5
+                                                                        class="card-title font-size-12 text-center mb-0 text-muted mb-3">
+                                                                        Apostas ganhas</h5>
+                                                                    <h6 class="text-center">
+                                                                        <small class="text-muted">Qtd.</small>
+                                                                        <span id="aviator_apostas_ganhas_pela_casa"
+                                                                            class="font-size-20 text-muted">174</span>
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-lg-6 mt-2">
+                                                                <div>
+                                                                    <h5
+                                                                        class="card-title font-size-12 text-center mb-0 text-white mb-3 text-muted">
+                                                                        Apostas perdidas</h5>
+                                                                    <h6 class="text-center">
+                                                                        <small class="text-muted">Qtd.</small>
+                                                                        <span id="aviator_apostas_perdidas_pela_casa"
+                                                                            class="font-size-20 text-muted">174</span>
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- mines cards ganhos -->
+                                            <div class="col-md-6">
+                                                <div class="card card-analize">
+                                                    <div class="card-header card-ganhos ">
+                                                        <h4 class="card-title font-size-18 text-center text-white mb-0">
+                                                            Mines
+                                                        </h4>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <div class="card card-ganhos ">
+                                                                    <div class="card-header py-2">
+                                                                        <h5
+                                                                            class="card-title font-size-12 text-center mb-0 text-white">
+                                                                            Lucro/Prejuízo</h5>
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <h6 class="text-center">
+                                                                            <small class="small-ganhos">R$</small>
+                                                                            <span id="mines_profit"
+                                                                                class="fonte-ganhos text-success">444,42</span>
+                                                                        </h6>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-lg-6">
+                                                                <div>
+                                                                    <h5
+                                                                        class="card-title font-size-12 text-center mb-0 text-muted mb-3">
+                                                                        Ganhos da Casa</h5>
+                                                                    <h6 class="text-center">
+                                                                        <small class="text-muted">R$</small>
+                                                                        <span id="mines_ganhos_da_casa"
+                                                                            class="font-size-20 text-muted">524,00</span>
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 mb-2">
+                                                                <div>
+                                                                    <h5
+                                                                        class="card-title font-size-12 text-center mb-0 text-muted mb-3">
+                                                                        Perdas da Casa</h5>
+                                                                    <h6 class="text-center">
+                                                                        <small class="text-muted">R$</small>
+                                                                        <span id="mines_perdas_da_casa"
+                                                                            class="font-size-20 text-muted">79,58</span>
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <hr>
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                <div>
+                                                                    <h5
+                                                                        class="card-title font-size-12 text-center mb-0 text-muted mb-3">
+                                                                        Apostas ganhas</h5>
+                                                                    <h6 class="text-center">
+                                                                        <small class="text-muted">Qtd.</small>
+                                                                        <span id="mines_apostas_ganhas_pela_casa"
+                                                                            class="font-size-20 text-muted">100</span>
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                <div>
+                                                                    <h5
+                                                                        class="card-title font-size-12 text-center mb-0 text-muted mb-3">
+                                                                        Apostas perdidas</h5>
+                                                                    <h6 class="text-center">
+                                                                        <small class="text-muted">Qtd.</small>
+                                                                        <span id="mines_apostas_perdidas_pela_casa"
+                                                                            class="font-size-20 text-muted">153</span>
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                       <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="card card-analize">
+                                                <div class="card-header card-ganhos">
+                                                    <h4 class="card-title font-size-18 text-center text-white mb-0">Options</h4>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="card card-ganhos">
+                                                                <div class="card-header py-2">
+                                                                    <h5 class="card-title font-size-12 text-center mb-0 text-white">Lucro/Prejuízo</h5>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <h6 class="text-center">
+                                                                        <small class="small-ganhos">R$</small>
+                                                                        <span id="options_profit" class="fonte-ganhos text-success">76,60</span>
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row px-4">
+                                                                <div class="col-md-12">
+                                                                    <div class="row">
+                                                                        <div class="col-md-6 mt-3">
+                                                                            <div>
+                                                                                <h5 class="card-title font-size-12 text-center mb-3 text-muted">
+                                                                                    Ganhos
+                                                                                    da
+                                                                                    Casa
+                                                                                </h5>
+    
+                                                                                <h6 class="text-center">
+                                                                                    <small class="text-muted">R$</small>
+                                                                                    <span id="double_ganhos_da_casa" class="font-size-20 text-muted">5.830,20</span>
+                                                                                </h6>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6 mt-3">
+                                                                            <div>
+                                                                                <h5 class="card-title font-size-12 text-center mb-3 text-muted">
+                                                                                    Ganhos
+                                                                                    da
+                                                                                    Casa
+                                                                                </h5>
+    
+                                                                                <h6 class="text-center">
+                                                                                    <small class="text-muted">R$</small>
+                                                                                    <span id="double_ganhos_da_casa" class="font-size-20 text-muted">830,20</span>
+                                                                                </h6>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12">
+                                                                            <hr>
+                                                                        </div>
+                                                                        <div class="col-md-6 ">
+                                                                            <div>
+                                                                                <h5 class="card-title font-size-12 text-center mb-3 text-muted">
+                                                                                    Ganhos
+                                                                                    da
+                                                                                    Casa
+                                                                                </h5>
+    
+                                                                                <h6 class="text-center">
+                                                                                    <small class="text-muted">R$</small>
+                                                                                    <span id="double_ganhos_da_casa" class="font-size-20 text-muted">5.830,20</span>
+                                                                                </h6>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6 mb-3">
+                                                                            <div>
+                                                                                <h5 class="card-title font-size-12 text-center mb-3 text-muted">
+                                                                                    Ganhos
+                                                                                    da
+                                                                                    Casa
+                                                                                </h5>
+    
+                                                                                <h6 class="text-center">
+                                                                                    <small class="text-muted">R$</small>
+                                                                                    <span id="double_ganhos_da_casa" class="font-size-20 text-muted">830,20</span>
+                                                                                </h6>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                      
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div><!-- end card-body -->
+                        </div>
+
+                        <!--  Modal para editar usuário -->
+                        <div class="modal fade bs-example-modal-xl" tabindex="-1"
+                            aria-labelledby="myExtraLargeModalLabel" style="display: none;" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content cor-modal">
+                                    <div class="modal-header">
+
+                                        <h5 class="modal-title" id="exampleModalLabel">
+                                            <font style="">
+                                                <font style="font-size: 18px;color: white;">
+                                                    Editar Usuário</font>
+                                            </font>
+                                        </h5>
+                                        <button type="button" class="btn-close bg-success" data-bs-dismiss="modal"
+                                            aria-label="Fechar"></button>
+
+
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group row mb-3">
+                                                <div class="col-md-3">
+                                                    <label for="">CPF</label>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <input class="w-100 input-up " type="text"
+                                                        placeholder=" 000.000.000-00">
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <form>
+                                            <div class="form-group row mb-3">
+                                                <div class="col-md-3">
+                                                    <label for="">Username</label>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <input class="w-100 input-up " type="text"
+                                                        placeholder=" Nome de usuário">
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <form>
+                                            <div class="form-group row mb-3">
+                                                <div class="col-md-3">
+                                                    <label for="">E-mail</label>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <input class="w-100 input-up " type="text"
+                                                        placeholder=" Digite seu E-mail">
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <form>
+                                            <div class="form-group row mb-3">
+                                                <div class="col-md-3">
+                                                    <label for="">Senha</label>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <input class="w-100 input-up " type="text" placeholder=" *******">
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <form>
+                                            <div class="form-group row mb-3">
+                                                <div class="col-md-3">
+                                                    <label for="">Data de
+                                                        nascimento</label>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <input class="w-100 input-up" type="date" placeholder="10/10/1999"
+                                                        value="1999-10-10" style="color:#737171;">
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <form>
+                                            <div class="form-group row mb-3">
+                                                <div class="col-md-3">
+                                                    <label for="">Telefone</label>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <input class="w-100 input-up " type="text"
+                                                        placeholder="(**)*********">
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <form>
+                                            <div class="form-group row mb-3">
+                                                <div class="col-md-3">
+                                                    <label for="">Balance</label>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <input class="w-100 input-up " type="text" placeholder="51.000000">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn botao-utilidades" data-bs-dismiss="modal">
+                                            <font style="">
+                                                <font style="">
+                                                    Cancelar
+                                                </font>
+                                            </font>
+                                        </button>
+                                        <button type="button" class="btn botao-utilidades">
+                                            <font style="">
+                                                <font style="">
+                                                    Enviar</font>
+                                            </font>
+                                        </button>
+                                    </div>
+                                </div><!-- /.modal-content -->
+                            </div><!-- /.modal-dialog -->
+                        </div>
+                        <!-- /.modal -->
+
+                        <!--  Modal histórico -->
+                        <div class="modal fade modal-historico-usuario" tabindex="-1"
+                            aria-labelledby="myExtraLargeModalLabel" tyle="display: none;" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content cor-modal">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="myExtraLargeModalLabel">
+                                            <font style="">
+                                                <font style="font-size: 18px;color: white;">Histórico de Apostas do
+                                                    usúario
+                                                </font>
+                                            </font>
+                                        </h5>
+                                        <button type="button" class="btn-close bg-success" data-bs-dismiss="modal"
+                                            aria-label="Fechar"></button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                    </div>
+                                </div>
+                                <!-- /.modal-content -->
+                            </div>
+                            <!-- /.modal-dialog -->
+                        </div>
+                        <!-- /.modal -->
+
+                        <!-- Modal para adicionar saldo -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            style="display: none;" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content cor-modal">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">
+                                            <font style="">
+                                                <font style=" font-size: 18px;color: white;">Adicionar Saldo
+                                                </font>
+                                            </font>
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Fechar"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="recipient-name" class="col-form-label">
+                                                    <font style="">
+                                                        <font style="">Usuário:
+                                                        </font>
+                                                    </font>
+                                                </label>
+                                                <input type="text" class="input-up w-100"
+                                                    placeholder="exemplo.contato@gmail.com">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">
+                                                    <font style="">
+                                                        <font style="">Valor bônus:
+                                                        </font>
+                                                    </font>
+                                                </label>
+                                                <input type="text" class="input-up w-100">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn botao-utilidades" data-bs-dismiss="modal">
+                                            <font style="">
+                                                <font style="">Cancelar</font>
+                                            </font>
+                                        </button>
+                                        <button type="button" class="btn botao-utilidades">
+                                            <font style="">
+                                                <font style="">Adicionar
+                                                </font>
+                                            </font>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- fim do modal -->
+
+                        <!-- Modal para adicionar bônus -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            style="display: none;" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content cor-modal">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">
+                                            <font style="">
+                                                <font style=" font-size: 18px;color: white;">Adicionar Bonûs
+                                                </font>
+                                            </font>
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Fechar"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="recipient-name" class="col-form-label">
+                                                    <font style="">
+                                                        <font style="">Usuário:
+                                                        </font>
+                                                    </font>
+                                                </label>
+                                                <input type="text" class="input-up w-100"
+                                                    placeholder="exemplo.contato@gmail.com">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">
+                                                    <font style="">
+                                                        <font style="">Valor bônus:
+                                                        </font>
+                                                    </font>
+                                                </label>
+                                                <input type="text" class="input-up w-100">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn botao-utilidades" data-bs-dismiss="modal">
+                                            <font style="">
+                                                <font style="">Cancelar</font>
+                                            </font>
+                                        </button>
+                                        <button type="button" class="btn botao-utilidades">
+                                            <font style="">
+                                                <font style="">Adicionar
+                                                </font>
+                                            </font>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- fim do modal -->
+
+
+                        <!-- Large modal button -->
+
+
+                        <!--  Large modal example -->
+                        <div class="modal fade modal-editar-afiliados" tabindex="-1" aria-labelledby="myLargeModalLabel"
+                            style="display: none;" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content cor-modal">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="myLargeModalLabel">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit; color: white;">Editar Usuário
+                                                </font>
+                                            </font>
+                                        </h5>
+                                        <button type="button" class="btn-close bg-success" data-bs-dismiss="modal"
+                                            aria-label="Fechar"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group row mb-3">
+                                                <div class="col-md-3">
+                                                    <label class="text-white font-size-14 mt-2">Código para
+                                                        Afiliação</label>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <input type="text" class="input-up w-100">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row mb-3">
+                                                <div class="col-md-3">
+                                                    <label class="text-white font-size-14 mt-2">CPF</label>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <input type="text" class="input-up w-100">
+
+                                                </div>
+                                            </div>
+                                            <div class="form-group row mb-3">
+                                                <div class="col-md-3">
+                                                    <label class="text-white font-size-14 mt-2">Nome</label>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <input type="text" class="input-up w-100">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row mb-3">
+                                                <div class="col-md-3">
+                                                    <label class="text-white font-size-14 mt-2">Username</label>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <input type="text" class="input-up w-100">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row mb-3">
+                                                <div class="col-md-3">
+                                                    <label class="text-white font-size-14 mt-2">E-mail</label>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <input type="text" class="input-up w-100">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row mb-3">
+                                                <div class="col-md-3">
+                                                    <label class="text-white font-size-14 mt-2">Senha</label>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <input type="text" class="input-up w-100">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row mb-3">
+                                                <div class="col-md-3">
+                                                    <label class="text-white font-size-14 mt-2">E-mail</label>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <input type="text" class="input-up w-100">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row mb-3">
+                                                <div class="col-md-3">
+                                                    <label class="text-white font-size-14 mt-2">Data de
+                                                        nascimento</label>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <input type="text" class="input-up w-100">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row mb-3">
+                                                <div class="col-md-3">
+                                                    <label class="text-white font-size-14 mt-2">Telefone</label>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <input type="text" class="input-up w-100">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div><!-- /.modal-content -->
+                            </div><!-- /.modal-dialog -->
+                        </div><!-- /.modal -->
+                        <!-- fim do modal -->
+
+
+                        <!-- select de calendario -->
+
+                        <!-- fim do select -->
+                        <script src="assets/libs/jquery/jquery.min.js"></script>
+                        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+                        <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+                        <script src="assets/libs/simplebar/simplebar.min.js"></script>
+                        <script src="assets/libs/node-waves/waves.min.js"></script>
+                        <script src="assets/libs/feather-icons/feather.min.js"></script>
+                        <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+                        <!-- pace js -->
+                        <script src="assets/libs/pace-js/pace.min.js"></script>
+                        <script src="assets/js/app.js"></script>
+
+
+                        <script src="assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+                        <script src="assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+                        <!-- Buttons examples -->
+                        <script src="assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+                        <script src="assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+                        <script src="assets/libs/jszip/jszip.min.js"></script>
+                        <script src="assets/libs/pdfmake/build/pdfmake.min.js"></script>
+                        <script src="assets/libs/pdfmake/build/vfs_fonts.js"></script>
+                        <script src="assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+                        <script src="assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+                        <script src="assets/libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+
+                        <!-- Responsive examples -->
+                        <script src="assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+                        <script src="assets/libs/datatables.net-responsive-bs4/js/responsive.
+                bootstrap4.min.js"></script>
+
+                        <script src="assets/libs/flatpickr/flatpickr.min.js"></script>
+                        <script src="assets/libs/sweetalert2/sweetalert2.min.js"></script>
+                        <script src="assets/js/admin.js"></script>
+</body>

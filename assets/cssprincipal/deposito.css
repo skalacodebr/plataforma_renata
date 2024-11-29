@@ -1,0 +1,45 @@
+
+.card-deposito {
+    background-color: #080b04;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px 0 rgba(6, 10, 14, 0.626), 0 5px 20px 0 rgba(6, 10, 14, 0.568);
+  }
+  
+  .card-header-deposito h4{
+    font-size: 30px;
+    color: var(--cor-9);
+  }
+
+  .vegas-icon {
+    position: absolute;
+    left: 1rem;
+    opacity: .5;
+    margin: 0;
+    cursor: pointer;
+    color: #428e67;
+  }
+  
+  .vegas-input {
+    padding-left: 40px;
+    background-color:#1f2029;
+    border: #1f2029;
+  }
+
+  .vegas-input:focus {
+    background-color: #1f2029;
+    border: 2px solid #7cc89f ;
+  }
+
+  .botao-deposito {
+    background-color: #428e67;
+    color: #fafcf8;
+  }
+
+ .botao-deposito:hover {
+    color: #fafcf8;
+ }
+
+
+
+
+

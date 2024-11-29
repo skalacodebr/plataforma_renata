@@ -1,0 +1,122 @@
+.card-historico {
+    background-color: #080b04;
+    border-radius: 3px;
+    box-shadow: 0 5px 20px 0 rgba(6, 10, 14, 0.626), 0 5px 20px 0 rgba(6, 10, 14, 0.568);
+}
+
+.card-header-historico {
+    background-color: #080b04;
+}
+
+.card-header-historico h1 {
+    color: #fafcf8;
+    font-size: 35px;
+
+}
+
+.card-header-pp {
+    background-color: #080b04;
+    border-radius: 3px;
+    box-shadow: 0 5px 20px 0 rgba(6, 10, 14, 0.626), 0 5px 20px 0 rgba(6, 10, 14, 0.568);
+}
+
+.card-header-pp:hover {
+    background-color: #7cc89f;
+    cursor: pointer;
+}
+
+.card-header-pp:hover .cor-hist a {
+    color: #080b04;
+}
+
+.card-header-pp:hover .cor-hist i {
+    color: #080b04;
+}
+
+.table>:not(caption)>*>* {
+    background-color: #223330;
+}
+
+.square-yellow {
+    background-color: #7cc89f;
+    color: black;
+}
+
+.square-bets {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square-bets .number {
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    border: 3px solid;
+}
+
+.number {
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 4px solid;
+}
+
+.square-black {
+    background-color: #5c5d62;
+    color: white;
+}
+
+.square-white {
+    background-color: #fafafa;
+    color: black;
+}
+
+.pagination li {
+    background-color: #080b04;
+}
+
+div.dataTables_wrapper div.dataTables_paginate ul.pagination a {
+    margin: 2px 0;
+    white-space: nowrap;
+    justify-content: flex-end;
+    background-color: #080b04;
+    border: 2px solid #7cc89f;
+}
+
+div.dataTables_wrapper div.dataTables_paginate ul.pagination a:focus {
+    background-color: #7cc89f;
+    border: 2px solid #7cc89f;
+    box-shadow: none;
+}
+
+.cor-hist {
+    color: #7cc89f;
+    display: flex;
+
+}
+
+.cor-hist a {
+    color: #7cc89f;
+    font-size: 12px;
+    flex-wrap: nowrap;
+    margin-top: 4px;
+}
+
+
+.cor-hist-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
